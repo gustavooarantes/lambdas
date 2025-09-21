@@ -1,6 +1,8 @@
 package com.gustavooarantes;
 
+import com.gustavooarantes.common.HelloTwo;
 import com.gustavooarantes.service.HelloService;
+import com.gustavooarantes.service.HelloTwoService;
 import java.util.Arrays;
 import java.util.List;
 
@@ -38,6 +40,10 @@ public class Main {
     HelloService helloService = new HelloService();
 
     helloService.getUserInfo();
+
+    HelloTwo helloTwo = () -> System.out.println("Hello");
+    HelloTwoService.process(helloTwo);
+    HelloTwoService.process(() -> System.out.println("Hello again!"));
   }
 
   // Example of simplifying  a method using lambdas:

@@ -1,5 +1,7 @@
 com/gustavooarantes/Main$MathOperation.class
-com/gustavooarantes/common/Hello.class
-com/gustavooarantes/Main.class
+com/gustavooarantes/common/HelloTwo.class
 com/gustavooarantes/common/Pair.class
 com/gustavooarantes/service/HelloService.class
+com/gustavooarantes/service/HelloTwoService.class
+com/gustavooarantes/common/Hello.class
+com/gustavooarantes/Main.class
