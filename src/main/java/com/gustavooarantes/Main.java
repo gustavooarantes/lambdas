@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Main {
 
+  // Functional interfaces specifies a single abstract method.
   @FunctionalInterface
   interface MathOperation {
     int operate(int a, int b);
@@ -18,13 +19,13 @@ public class Main {
      */
     List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
-    int sumOfSquaredEvends =
+    int sumOfSquaredEvens =
         numbers.stream()
             .filter(number -> number % 2 == 0)
             .mapToInt(number -> number * number)
             .sum();
 
-    System.out.println(sumOfSquaredEvends);
+    System.out.println(sumOfSquaredEvens);
 
     /**
      * Lambdas are like compact representations of an anonymous function (functions that lacks a
