@@ -1,5 +1,6 @@
 package com.gustavooarantes;
 
+import com.gustavooarantes.service.HelloService;
 import java.util.Arrays;
 import java.util.List;
 
@@ -30,10 +31,13 @@ public class Main {
     /**
      * Lambdas are like compact representations of an anonymous function (functions that lacks a
      * specific name) that can be easily passed around. It shares common characteristics with
-     * methods, such as having parameters, a body, a return type, and the potential for a list of qa
-     * exceptions, although it isn't tied to a particular class. Lambdas can be passed as an
-     * argument to a method, or even be stored in a variable.
+     * methods, such as having parameters, a body, a return type, and the potential for a list of
+     * exceptions, although it isn't tied to a particular class. Lambdas can be passed as arguments
+     * to a method, or even be stored in a variable.
      */
+    HelloService helloService = new HelloService();
+
+    helloService.getUserInfo();
   }
 
   // Example of simplifying  a method using lambdas:
